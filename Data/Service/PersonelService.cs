@@ -21,19 +21,21 @@ namespace Service
         {
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
             cmd1.ExecuteNonQuery();
+
+
             bag.BaglantiKapat();
 
-            throw new NotImplementedException();
         }
 
         public int insert(string sqlCumlesi)
         {
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
             cmd1.ExecuteNonQuery();
+
+
             bag.BaglantiKapat();
 
-
-            throw new NotImplementedException();
+            return 0;
         }
 
         public void update(string sqlCumlesi)
@@ -41,14 +43,11 @@ namespace Service
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
             cmd1.ExecuteNonQuery();
             bag.BaglantiKapat();
-
-            throw new NotImplementedException();
         }
 
         public List<PersonelDTO> PersonelListesi(string sqlCumlesi)
         {
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
-            bag.BaglantiAc();
             SqlDataReader dr = cmd1.ExecuteReader();
 
             List<PersonelDTO> pdto = new List<PersonelDTO>();

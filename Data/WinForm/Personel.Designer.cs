@@ -1,6 +1,6 @@
 ﻿namespace WinForm
 {
-    partial class Personel
+    partial class PersonelForm
     {
         /// <summary>
         /// Required designer variable.
@@ -36,6 +36,7 @@
             this.dtpKayitTarihi = new System.Windows.Forms.DateTimePicker();
             this.btnKaydet = new System.Windows.Forms.Button();
             this.dtgPersonelListesi = new System.Windows.Forms.DataGridView();
+            this.lblHata = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dtgPersonelListesi)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,6 +86,7 @@
             // 
             // dtpKayitTarihi
             // 
+            this.dtpKayitTarihi.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.dtpKayitTarihi.Location = new System.Drawing.Point(115, 104);
             this.dtpKayitTarihi.Name = "dtpKayitTarihi";
             this.dtpKayitTarihi.Size = new System.Drawing.Size(200, 20);
@@ -112,11 +114,22 @@
             this.dtgPersonelListesi.Size = new System.Drawing.Size(303, 172);
             this.dtgPersonelListesi.TabIndex = 6;
             // 
-            // Personel
+            // lblHata
+            // 
+            this.lblHata.AutoSize = true;
+            this.lblHata.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblHata.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.lblHata.Location = new System.Drawing.Point(15, 147);
+            this.lblHata.Name = "lblHata";
+            this.lblHata.Size = new System.Drawing.Size(0, 15);
+            this.lblHata.TabIndex = 7;
+            // 
+            // PersonelForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(323, 393);
+            this.Controls.Add(this.lblHata);
             this.Controls.Add(this.dtgPersonelListesi);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.dtpKayitTarihi);
@@ -126,8 +139,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtAd);
             this.MinimizeBox = false;
-            this.Name = "Personel";
+            this.Name = "PersonelForm";
             this.Text = "Pesonel Ekle";
+            this.Load += new System.EventHandler(this.PersonelForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgPersonelListesi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -144,6 +158,7 @@
         private System.Windows.Forms.DateTimePicker dtpKayitTarihi;
         private System.Windows.Forms.Button btnKaydet;
         private System.Windows.Forms.DataGridView dtgPersonelListesi;
+        private System.Windows.Forms.Label lblHata;
     }
 }
 

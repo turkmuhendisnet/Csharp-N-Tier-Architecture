@@ -11,25 +11,52 @@ using System.Windows.Forms;
 
 namespace WinForm
 {
-    public partial class Personel : Form
+    public partial class PersonelForm : Form
     {
-        public Personel()
+        IPersonelService personelService;
+        public PersonelForm()
         {
             InitializeComponent();
         }
 
         private void btnKaydet_Click(object sender, EventArgs e)
         {
-            IPersonelService personelService = new PersonelService();
 
-           var sonuc=  personelService.PersonelListesi("select * from Personel");
+            try
+            {
+                personelService = new PersonelService();
 
+                personelService.insert("insert into Personel (Adi,Soyadi,KayitTarihi)" +
+                    "values('" + txtAd.Text + "','" + txtSoyad.Text + "','" + Convert.ToDateTime(dtpKayitTarihi.Text) + "')");
+                PersonelListele();
+
+                lblHata.ForeColor = Color.Blue;
+                lblHata.Text = ("Kayıt Başarılı");
+
+            }
+            catch (Exception ex)
+            {
+                lblHata.ForeColor = Color.Red;
+                lblHata.Text = ("Kayıt Başarısız");
+
+            }
             
+        }
+
+        private void PersonelForm_Load(object sender, EventArgs e)
+        {
+            PersonelListele();
+        }
+
+        void PersonelListele()
+        {
+            personelService = new PersonelService();
+
+            var sonuc = personelService.PersonelListesi("select * from Personel");
+
             dtgPersonelListesi.DataSource = sonuc;
             dtgPersonelListesi.Columns[0].Visible = false;
             dtgPersonelListesi.Columns[2].Width = 57;
-
-            txtAd.Text = sonuc[0].Adi;
         }
     }
 }

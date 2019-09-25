@@ -11,5 +11,5 @@ C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinFo
 C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\bin\Debug\Data.dll
 C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\bin\Debug\Service.pdb
 C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\bin\Debug\Data.pdb
-C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\obj\Debug\WinForm.Personel.resources
 C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\obj\Debug\WinForm.csproj.CopyComplete
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\WinForm\obj\Debug\WinForm.PersonelForm.resources
