@@ -9,7 +9,7 @@ namespace Data
 {
     public class Baglanti
     {
-        SqlConnection conn = new SqlConnection(@"Server=ALICAKIR\SQLEXPRESS;Database=Test;Integrated Security=true;");
+        SqlConnection conn = new SqlConnection("Server=ALICAKIR\\SQLEXPRESS;Database=Test;Integrated Security=true;");
 
         public SqlConnection BaglantiAc ()
         {           

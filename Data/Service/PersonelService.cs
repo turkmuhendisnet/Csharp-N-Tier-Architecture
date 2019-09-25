@@ -9,13 +9,14 @@ using Service.DTO;
 
 namespace Service
 {
-    class Personel : IPersonel
+  public  class PersonelService : IPersonelService
     {
         Baglanti bag = new Baglanti();
 
         Command cmd = new Command();
 
 
+        
         public void delete(string sqlCumlesi)
         {
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
@@ -47,17 +48,20 @@ namespace Service
         public List<PersonelDTO> PersonelListesi(string sqlCumlesi)
         {
             SqlCommand cmd1 = cmd.sqlcommand(sqlCumlesi);
+            bag.BaglantiAc();
             SqlDataReader dr = cmd1.ExecuteReader();
 
             List<PersonelDTO> pdto = new List<PersonelDTO>();
-
+           
             while(dr.Read())
             {
-                pdto.Add(new PersonelDTO {
-                    Id=(int)dr["Id"],
+                pdto.Add(new PersonelDTO
+                {
+
+                    Id=Convert.ToInt32( dr["Id"]),
                     Adi = dr["Adi"].ToString(),
                     Soyadi=dr["Soyadi"].ToString(),
-                    KayitTarihi=(DateTime)dr["Kayıt Tarihi"]
+                    KayitTarihi=Convert.ToDateTime( dr["KayitTarihi"].ToString()),
                 
                 } );
             }

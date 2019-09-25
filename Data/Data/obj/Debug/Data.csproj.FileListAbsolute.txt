@@ -1,0 +1,6 @@
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\bin\Debug\Data.dll
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\bin\Debug\Data.pdb
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\obj\Debug\Data.csprojAssemblyReference.cache
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\obj\Debug\Data.csproj.CoreCompileInputs.cache
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\obj\Debug\Data.dll
+C:\Users\Ali ÇAKIR\Desktop\Yeni Çalışma\Udemy\N-Tier Architecture\Data\Data\obj\Debug\Data.pdb

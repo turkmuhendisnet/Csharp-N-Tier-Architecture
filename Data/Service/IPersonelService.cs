@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Service
 {
-    public interface IPersonel
+    public interface IPersonelService
     {
         int insert(string sqlCumlesi);
         void delete(string sqlCumlesi);
