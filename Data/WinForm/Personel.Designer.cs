@@ -96,7 +96,7 @@
             this.btnKaydet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnKaydet.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnKaydet.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnKaydet.Location = new System.Drawing.Point(209, 143);
+            this.btnKaydet.Location = new System.Drawing.Point(209, 147);
             this.btnKaydet.Name = "btnKaydet";
             this.btnKaydet.Size = new System.Drawing.Size(106, 37);
             this.btnKaydet.TabIndex = 5;
@@ -109,14 +109,14 @@
             this.dtgPersonelListesi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgPersonelListesi.Location = new System.Drawing.Point(12, 201);
             this.dtgPersonelListesi.Name = "dtgPersonelListesi";
-            this.dtgPersonelListesi.Size = new System.Drawing.Size(300, 172);
+            this.dtgPersonelListesi.Size = new System.Drawing.Size(303, 172);
             this.dtgPersonelListesi.TabIndex = 6;
             // 
             // Personel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 393);
+            this.ClientSize = new System.Drawing.Size(323, 393);
             this.Controls.Add(this.dtgPersonelListesi);
             this.Controls.Add(this.btnKaydet);
             this.Controls.Add(this.dtpKayitTarihi);
