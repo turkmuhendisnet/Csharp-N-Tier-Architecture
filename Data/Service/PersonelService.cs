@@ -57,6 +57,7 @@ namespace Service
                 pdto.Add(new PersonelDTO
                 {
 
+
                     Id=Convert.ToInt32( dr["Id"]),
                     Adi = dr["Adi"].ToString(),
                     Soyadi=dr["Soyadi"].ToString(),
